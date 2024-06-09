@@ -3,20 +3,24 @@
 
     <!-- Login Activity -->
     <string name="login_activity_title">Login</string>
-    <string name="tituloUsername">Ingrese Usuario</string>
+    <string name="Login_tituloUsername">Ingrese Usuario</string>
     <string name="username_hint">Nombre de Usuario</string>
-    <string name="tituloPassword">Ingrese Contraseña</string>
+    <string name="login_tituloPassword">Ingrese Contraseña</string>
     <string name="password_hint">Contraseña</string>
     <string name="login_button_text">Login</string>
     <string name="register_button_text">Registrar</string>
 
     <!-- Register Activity -->
     <string name="register_activity_title">Registro</string>
+    <string name="register_tituloUsername">Ingrese Nombre de Usuario</string>
     <string name="register_username_hint">Nombre de Usuario</string>
+    <string name="register_tituloPassword">Ingrese Password</string>
     <string name="register_password_hint">Contraseña</string>
+    <string name="register_sexo">Seleccione su sexo</string>
     <string name="male_radio_button">Masculino</string>
     <string name="female_radio_button">Femenino</string>
     <string name="other_radio_button">Otro</string>
+    <string name="register_Pais">Seleccione su Pais</string>
     <string name="country_spinner_prompt">Selecciona tu país</string>
     <string name="register_user_button_text">Registrar</string>
     <string name="back_to_login_button_text">Volver</string>
