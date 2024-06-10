@@ -49,7 +49,7 @@ public class MainActivityLoguin extends AppCompatActivity {
         String savedPassword = sharedPreferences.getString("password", null);
 
         if (inputUsername.equals(savedUsername) && inputPassword.equals(savedPassword)) {
-            Intent intent = new Intent(MainActivityLoguin.this, MainActivity_michi.class);
+            Intent intent = new Intent(MainActivityLoguin.this, Activity_juegoMichi.class);
             startActivity(intent);
             finish();
         } else {
