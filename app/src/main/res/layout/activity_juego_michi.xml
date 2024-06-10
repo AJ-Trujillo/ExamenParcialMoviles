@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_juegoMichi">
+
+
+    <TextView
+        android:id="@+id/txtRecepcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:text="Actividad Formulario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:onClick="regresar"
+        android:text="@string/btnRegresarA3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="132dp"
+        android:onClick="refrescar"
+        android:text="@string/btnRefresacarA3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="286dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="50dp"
+        app:columnCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickBoton"
+            android:text="@string/btnMichi"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickBoton"
+            android:text="@string/btnMichi"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickBoton"
+            android:text="@string/btnMichi"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickBoton"
+            android:text="@string/btnMichi"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickBoton"
+            android:text="@string/btnMichi"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickBoton"
+            android:text="@string/btnMichi"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickBoton"
+            android:text="@string/btnMichi"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickBoton"
+            android:text="@string/btnMichi"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickBoton"
+            android:text="@string/btnMichi"
+            app:layout_column="2"
+            app:layout_row="2" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

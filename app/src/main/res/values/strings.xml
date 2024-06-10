@@ -34,7 +34,7 @@
     </string-array>
 
     <!-- Tic Tac Toe Activity -->
-    <string name="tic_tac_toe_activity_title">Juego de Michi</string>
-    <string name="winner_text_view">Gana:</string>
-    <string name="reset_button_text">Refrescar</string>
+    <string name="btnRegresarA3">Regresar</string>
+    <string name="btnRefresacarA3">Refrescar</string>
+    <string name="btnMichi"> </string>
 </resources>
