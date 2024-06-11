@@ -39,7 +39,7 @@
     <!-- Juego Michi Activity -->
     <string name="juego_michi_title">Juego Michi</string>
     <string name="btnMichi">Michi</string>
-    <string name="bienvenido_mensaje">Bienvenido</string>
+    <string name="bienvenido_mensaje">Bienvenido, %1$s!</string>
     <string name="ganaron_las_x">¡Ganaron las X!</string>
     <string name="ganaron_las_o">¡Ganaron las O!</string>
     <string name="btnRegresarA3">Regresar</string>
