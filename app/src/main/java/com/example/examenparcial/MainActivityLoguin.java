@@ -3,6 +3,7 @@ package com.example.examenparcial;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -19,13 +20,23 @@ public class MainActivityLoguin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_loguin);
+
+        // Ocultar los botones de navegación
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_loguin);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+
+
         });
+
+
 
         userName = findViewById(R.id.txtusername);
         password = findViewById(R.id.txtpassword);
@@ -37,6 +48,8 @@ public class MainActivityLoguin extends AppCompatActivity {
             Intent intent = new Intent(MainActivityLoguin.this, MainActivityRegistro.class);
             startActivity(intent);
             finish();
+
+
         });
     }
 

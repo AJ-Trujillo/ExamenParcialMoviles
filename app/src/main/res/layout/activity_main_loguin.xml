@@ -15,84 +15,92 @@
         android:layout_marginTop="48dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/appNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/appNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textSize="24sp"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/logoImageView"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtusername"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/txtusername" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/txtusername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
         android:hint="@string/username_hint"
         android:inputType="text"
         android:maxLength="10"
         android:padding="12dp"
-        android:backgroundTint="#FFFFFF"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/appNameTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/txtpassword"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appNameTextView"
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/txtpassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
         android:hint="@string/password_hint"
         android:inputType="textPassword"
         android:padding="12dp"
-        android:backgroundTint="#FFFFFF"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/txtusername"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtusername"
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
         android:text="@string/login_button_text"
         android:textColor="#00BCD4"
-        android:backgroundTint="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/txtpassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpassword"
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
         android:text="@string/register_button_text"
         android:textColor="#00BCD4"
-        android:backgroundTint="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

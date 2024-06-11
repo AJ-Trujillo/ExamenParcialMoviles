@@ -14,12 +14,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Activity_juegoMichi extends AppCompatActivity {
-    private TextView tv1;
     private boolean jugador1 = true;
     private String[][] board = new String[3][3];
-    private Queue<int[]> moveQueueX = new LinkedList<>();
-    private Queue<int[]> moveQueueO = new LinkedList<>();
-    private final int MAX_MOVES = 3;
+    private final Queue<int[]> moveQueueX = new LinkedList<>();
+    private final Queue<int[]> moveQueueO = new LinkedList<>();
 
     @SuppressLint("StringFormatInvalid")
     @Override
@@ -27,7 +25,13 @@ public class Activity_juegoMichi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juego_michi);
 
-        tv1 = findViewById(R.id.txtRecepcion);
+        // Ocultar los botones de navegación
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        setContentView(R.layout.activity_juego_michi);
+
+        TextView tv1 = findViewById(R.id.txtRecepcion);
         String R_Usuario = getIntent().getStringExtra("usuario");
         tv1.setText(String.format(getString(R.string.bienvenido_mensaje), R_Usuario));
     }
@@ -47,12 +51,14 @@ public class Activity_juegoMichi extends AppCompatActivity {
             return;
         }
 
+        int MAX_MOVES = 3;
         if (jugador1) {
             button.setText("X");
             board[row][col] = "X";
             moveQueueX.add(new int[]{row, col});
             if (moveQueueX.size() > MAX_MOVES) {
                 int[] oldMove = moveQueueX.poll();
+                assert oldMove != null;
                 board[oldMove[0]][oldMove[1]] = null;
                 updateButton(oldMove[0], oldMove[1]);
             }
@@ -62,6 +68,7 @@ public class Activity_juegoMichi extends AppCompatActivity {
             moveQueueO.add(new int[]{row, col});
             if (moveQueueO.size() > MAX_MOVES) {
                 int[] oldMove = moveQueueO.poll();
+                assert oldMove != null;
                 board[oldMove[0]][oldMove[1]] = null;
                 updateButton(oldMove[0], oldMove[1]);
             }
@@ -80,7 +87,7 @@ public class Activity_juegoMichi extends AppCompatActivity {
 
     private void updateButton(int row, int col) {
         String buttonID = "button" + row + col;
-        int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
+        @SuppressLint("DiscouragedApi") int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
         Button button = findViewById(resID);
         button.setText("");
         button.setEnabled(true);

@@ -17,7 +17,8 @@
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/txtUsuario"
@@ -30,7 +31,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        tools:ignore="TextContrastCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView7"
@@ -38,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/register_tituloPassword"
+        android:textColor="#263238"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,13 +51,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:autofillHints=""
         android:hint="@string/register_password_hint"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textColorHint="#263238"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:ignore="VisualLintTextFieldSize" />
+        tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView3"
@@ -62,6 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/register_sexo"
+        android:textColor="#263238"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,7 +112,8 @@
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup"
+        tools:ignore="TextContrastCheck" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -136,7 +143,8 @@
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        tools:ignore="TextContrastCheck" />
 
     <Spinner
         android:id="@+id/countrySpinner"
