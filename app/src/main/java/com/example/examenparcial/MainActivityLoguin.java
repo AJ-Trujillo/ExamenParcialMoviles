@@ -44,6 +44,11 @@ public class MainActivityLoguin extends AppCompatActivity {
         String inputUsername = userName.getText().toString().trim();
         String inputPassword = password.getText().toString().trim();
 
+        if (inputUsername.length() > 10) {
+            Toast.makeText(this, "El nombre de usuario no debe exceder los 10 caracteres", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         SharedPreferences sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE);
         String savedUsername = sharedPreferences.getString("username", null);
         String savedPassword = sharedPreferences.getString("password", null);

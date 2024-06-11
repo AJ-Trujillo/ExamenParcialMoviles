@@ -20,6 +20,9 @@
     <string name="male_radio_button">Masculino</string>
     <string name="female_radio_button">Femenino</string>
     <string name="other_radio_button">Otro</string>
+    <string name="register_documento">Seleccione Tipo de documento</string>
+    <string name="checbox_DNI">DNI</string>
+    <string name="checbox_Pasaporte">Pasaporte</string>
     <string name="register_Pais">Seleccione su Pais</string>
     <string name="country_spinner_prompt">Selecciona tu país</string>
     <string name="register_user_button_text">Registrar</string>
@@ -33,8 +36,13 @@
         <item>Bolivia</item>
     </string-array>
 
-    <!-- Tic Tac Toe Activity -->
+    <!-- Juego Michi Activity -->
+    <string name="juego_michi_title">Juego Michi</string>
+    <string name="btnMichi">Michi</string>
+    <string name="bienvenido_mensaje">Bienvenido, %1$s!</string>
+    <string name="ganaron_las_x">¡Ganaron las X!</string>
+    <string name="ganaron_las_o">¡Ganaron las O!</string>
     <string name="btnRegresarA3">Regresar</string>
-    <string name="btnRefresacarA3">Refrescar</string>
-    <string name="btnMichi"> </string>
+    <string name="btnRefrescarA3">Refrescar</string>
+
 </resources>
